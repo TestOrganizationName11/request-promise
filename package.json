@@ -1,0 +1,16 @@
+{
+  "name": "my request-promise",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "description": "my request-promise",
+  "main": "app.js",
+  "license": "MIT"
+}
