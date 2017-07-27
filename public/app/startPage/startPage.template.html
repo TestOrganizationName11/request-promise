@@ -1,0 +1,27 @@
+<input class="form-control" type="text" placeholder="Github username" ng-model="StartPage.username">
+<button class="btn btn-default" ng-click="StartPage.addUsername()"> Ok</button>
+
+<h1> {{StartPage.message}} </h1>
+
+<div ng-show="StartPage.user">
+
+  <ul class="text-left list">
+    <li>login: {{StartPage.user.login}}</li>
+    <li>id: {{StartPage.user.id}}</li>
+    <li>avatar_url: <a href="{{StartPage.user.avatar_url}}"> {{StartPage.user.avatar_url}}</a></li>
+    <li>url: <a href="{{StartPage.user.html_url}}"> {{StartPage.user.html_url}}</a></li>
+    <li>type: {{StartPage.user.type}}</li>
+    <li>company: {{StartPage.user.company}}</li>
+    <li>email: {{StartPage.user.email}}</li>
+    <li>public_repos: {{StartPage.user.public_repos}}</li>
+    <li>public_gists: {{StartPage.user.public_gists}}</li>
+    <li>followers: {{StartPage.user.followers}}</li>
+    <li>following: {{StartPage.user.following}}</li>
+    <li>created_at: {{StartPage.user.created_at}}</li>
+    <li>updated_at: {{StartPage.user.updated_at}}</li>
+  </ul>
+
+  <!--<button class="btn btn-default" ng-click="StartPage.moreInfo('orgs')"> Get organizations</button>
+  <button class="btn btn-default" ng-click="StartPage.moreInfo('repos')"> Get repositories</button>-->
+
+</div>
